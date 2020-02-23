@@ -10,11 +10,12 @@ class User(db.Model):
 
 
 
-    def __init__(self, name, surname, age):
+    def __init__(self, name, surname, age, id):
         self.name = name
         self.surname = surname
         self.age = age
+        self.id = id
 
 
     def __repr__(self):
-        return '<User %r>' % self.surname
+        return  self.id
